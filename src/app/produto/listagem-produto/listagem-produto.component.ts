@@ -9,7 +9,7 @@ import {PRODUTOS} from '../../shared/modelo/PRODUTOS';
 })
 export class ListagemProdutoComponent {
 
-  produto = PRODUTOS;
+  produtos = PRODUTOS;
   excluir(produtoRemover: Produto): void {
     const indx = this.produtos.findIndex(produto =>
       produto.id === produtoRemover.id);

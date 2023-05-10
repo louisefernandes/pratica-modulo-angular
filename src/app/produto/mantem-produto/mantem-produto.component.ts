@@ -21,7 +21,7 @@ export class MantemProdutoComponent {
     if (idParaEdicao) {
       // editando
       const produtoEncontrado = this.produtos.find(
-        produto => produto.id === idParaEdicao);
+        produto => produto.id === Number(idParaEdicao));
       if (produtoEncontrado) {
         this.estahCadastrando = false;
         this.nomeBotaoManutencao = 'Salvar';
